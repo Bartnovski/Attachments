@@ -10,7 +10,7 @@ data class Post (
     val friendsOnly: Boolean,
     val comments: Comments?,
     val copyright: Copyright?,
-    val likes: Likes,
+    val likes: Likes?,
     val reposts: Reposts?,
     val views: Views?,
     val signerId: UInt,
@@ -30,4 +30,5 @@ data class Post (
         else -> field = "post"
     }
     val attachments = emptyArray<Attachments>()
+
 }
